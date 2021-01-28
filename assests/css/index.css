@@ -1,0 +1,53 @@
+header {
+  height: 5vh;
+  background-color: black;
+}
+
+footer {
+  height: 5vh;
+  background-color: black;
+}
+
+.leftsection, .rightsection {
+  height: 90vh;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .leftsection, .rightsection {
+    height: 90vh;
+  }
+}
+
+.leftsection {
+  background-color: blue;
+}
+
+
+.upperpart, .lowerpart {
+  height: 45vh;
+}
+
+.lowerpartcontent {
+  display: block;
+}
+
+.centered{
+  text-align: center;
+}
+
+.upperpart {
+  background-color: white;
+}
+
+
+.rightsection {
+  background-color: red;
+}
+
+/* Style the image inside the centered container, if needed */
+#profileimg {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
