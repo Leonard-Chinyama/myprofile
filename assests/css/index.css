@@ -1,18 +1,23 @@
 body{
  font-family: sans-serif;
- min-height: 750px;
 }
 
 header{
-  height: 5vh;
+  height: 39px;
 }
 
 footer {
-  height: 5vh;
+  height: 39px;
+  line-height: 39px;
+  text-align: center;
   background-color: black;
   color: #ddd;
   font-size: small;
   margin-bottom: 0px;
+}
+
+#footer-p {
+  vertical-align: middle;
 }
 
 .leftsection, .rightsection {
@@ -31,18 +36,19 @@ footer {
 
 
 .upperpart {
-  height: 45vh;
+  height: 350px;
   text-align: center;
   padding: 40px 20px 0 0;
 }
 
 .lowerpart {
   display: block;
-  height: 40vh;
+  height: 300px;
   border: 3px solid #BC2663;
   margin: 20px 8px 8px 8px;
   padding-top: 10px;
 }
+
 
 .centered{
   text-align: center;
@@ -71,4 +77,41 @@ footer {
 	margin-top:10px;
 	font-weight: bold;
   color: #BC2663;
+}
+
+
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 20px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google-plus {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
 }
