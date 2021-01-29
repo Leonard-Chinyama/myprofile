@@ -1,15 +1,20 @@
-header {
+body{
+ font-family: sans-serif;
+}
+
+header{
   height: 5vh;
-  background-color: black;
 }
 
 footer {
   height: 5vh;
   background-color: black;
+  color: #ddd;
+  font-size: small;
+  margin-bottom: 0px;
 }
 
 .leftsection, .rightsection {
-  height: 90vh;
   width: 100%;
 }
 
@@ -20,34 +25,48 @@ footer {
 }
 
 .leftsection {
-  background-color: blue;
+  background-color: white;
 }
 
 
-.upperpart, .lowerpart {
+.upperpart {
   height: 45vh;
+  text-align: center;
+  padding: 40px 20px 0 0;
 }
 
-.lowerpartcontent {
+.lowerpart {
   display: block;
+  height: 40vh;
+  border: 3px solid #BC2663;
+  margin: 20px 8px 8px 8px;
+  padding-top: 10px;
 }
 
 .centered{
   text-align: center;
 }
 
-.upperpart {
-  background-color: white;
-}
-
 
 .rightsection {
-  background-color: red;
+  background-color: white;
+  height: 100%;
+  border:1px solid gray;
 }
 
 /* Style the image inside the centered container, if needed */
+
 #profileimg {
   height: 250px;
   width: 250px;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 50%;
+  display: block;
+}
+
+#profileimg-h5{
+	margin-top:10px;
+	font-weight: bold;
+  color: #BC2663;
 }
