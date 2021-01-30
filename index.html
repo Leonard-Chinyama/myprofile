@@ -13,7 +13,7 @@
 
 </head>
 
-<body>
+<body onload="indexslideshow()">
 
     <div class="header">
       <a href="#" class="fa fa-home logo"></a>
@@ -43,7 +43,7 @@
         <!-- the left section should be fixed. Will contain my pic & contact details -->
             <div id="leftsection" class="leftsection">
               <div class="upperpart">
-                <img src="assests/images/leo_img1.jpg" id="profileimg" alt="Avatar">
+                <img src="assests/images/profile_pic.jpg" id="profileimg" alt="Avatar">
                   <h5 id="profileimg-h5">Leonard Kapokolo Chinyama</h5>
                   <p>Software Engineer, Web Developer and Business Analyst</p>
               </div>
@@ -69,12 +69,43 @@
 
 <!-- left sections ends. right section begins -->
 <!----------------------------------------------------------------------------->
-        <div class="col-md-7 no-gutters d-flex justify-content-center align-items-center" style="padding: 8px; height: 90vh;">
+        <div class="col-md-7 no-gutters" style="padding: 8px;">
       <!-- On the right-section the user should be able to switch between different
            pieces of information. e.g. Education, Interests, Profession etc
            the layout should be flexible, with some animations. -->
 
           <div id="rightsection" class="rightsection">
+            <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="title">
+              <h3>My Education</h3>
+            </div>
+              <div class="numbertext">1 / 3</div>
+              <img src="assests/images/leo_img1.jpg" style="width:100%">
+              <div class="text">Caption One</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="assests/images/leo_img2.jpg" style="width:100%">
+              <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="assests/images/profile_pic.jpg" style="width:100%">
+              <div class="text">Caption Three</div>
+            </div>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
           </div>
         </div>
 <!-- right section ends -->
@@ -90,10 +121,6 @@
         <p id="footer-p">copyright 2020 by Leonard-Chinyama</p>
   </footer>
 
-
     <script src="assests/js/index.js"></script>
-    <script type="text/javascript">
-      console.log(window.innerHeight);
-    </script>
 </body>
 </html>
