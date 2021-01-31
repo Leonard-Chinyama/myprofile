@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assests/css/index.css">
+    <!-- <link rel="stylesheet" href="assests/css/style.css"> -->
     <!-- CSS links end -->
 
 </head>
@@ -18,10 +19,10 @@
     <div class="header">
       <a href="" class="fa fa-home logo"></a>
       <div class="header-right">
-        <a href="about.html">About</a>
-        <a href="education.html">Education</a>
-        <a href="skills.html">Skills</a>
-        <a href="interests.html">Interests</a>
+        <a href="#about" onclick="dataFunction('about')" id="about_item">About</a>
+        <a href="#education" onclick="dataFunction('education')" id="education_item">Education</a>
+        <a href="#skills" onclick="dataFunction('skills')" id="skills_item">Skills</a>
+        <a href="#interests" onclick="dataFunction('interests')" id="interests_item">Interests</a>
       </div>
     </div>
   <main>
@@ -65,10 +66,12 @@
            the layout should be flexible, with some animations. -->
 
           <div id="rightsection" class="rightsection">
+            <div id="slideshow">
+
             <div class="slideshow-container">
 
-            <div class="mySlides fade">
-              <a target="_self" href="#">
+            <div class="mySlides fade" onclick="dataFunction('about')">
+              <a target="_self" href="#about">
                 <div class="title">
                   <h3>About Me</h3>
                 </div>
@@ -80,8 +83,8 @@
               </a>
             </div>
 
-            <div class="mySlides fade">
-              <a target="_self" href="#">
+            <div class="mySlides fade" onclick="dataFunction('education')">
+              <a target="_self" href="#education">
                 <div class="title">
                   <h3>My Education</h3>
                 </div>
@@ -90,11 +93,11 @@
                   <img src="assests/images/leo_img2.jpg" class="img" style="width:100%; height: 560px;">
                   <div class="text">See my Educational background here</div>
               </div>
-              </a>
+            </a>
             </div>
 
-            <div class="mySlides fade">
-              <a target="_self" href="#">
+            <div class="mySlides fade" onclick="dataFunction('skills')">
+              <a target="_self" href="#skills">
                 <div class="title">
                   <h3>My Skills</h3>
                 </div>
@@ -106,8 +109,8 @@
               </a>
             </div>
 
-            <div class="mySlides fade">
-              <a target="_self" href="#">
+            <div class="mySlides fade" onclick="dataFunction('interests')">
+              <a target="_self" href="#interests">
                 <div class="title">
                   <h3>My Interests</h3>
                 </div>
@@ -129,6 +132,26 @@
               <span class="dot"></span>
             </div>
           </div>
+
+
+          <div id="data-container" class="dataContainer" style="display: none;">
+
+          <!-- <div class="numbertext">
+            <a href="#" style="color: red;">&#8592; Back</a>
+          </div> -->
+          <div id="closeBtnDiv">
+          <button id="closeBtn" onclick="window.location.assign('index.html')" style="float:right;"></button>
+        </div>
+          <div class="title">
+          <h3 id="title">Hello World</h3>
+          <div class="dataset">
+            <p id="thedata">
+            </p>
+          </div>
+          </div>
+          </div>
+
+          </div>
         </div>
 <!-- right section ends -->
 <!----------------------------------------------------------------------------->
@@ -144,5 +167,6 @@
   </footer>
 
     <script src="assests/js/index.js"></script>
+    <script src="assests/js/commonfunctions.js"></script>
 </body>
 </html>
