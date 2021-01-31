@@ -1,20 +1,27 @@
-var myactive = document.querySelectorAll(".header-right > a").classList.remove("active");
+/* This method will ensure that when the page is refreshed, the user is taken
+  straight to where they were, and not to the home page. */
+window.addEventListener('load', (event) => {
+    var currentURL = window.location.href;
+    var part = currentURL.split("#")[1];
+
+    if(part.trim().length > 0){
+      dataFunction(part);
+    }
+    else{
+      return;
+    }
+});
+
+
+
 
 function dataFunction(selected){
-  myactive.className = "";
 
   document.getElementById('slideshow').style.display = "none";
   document.getElementById('data-container').style.display = "block";
 
-  var education_item = document.getElementById('education_item');
-  var about_item = document.getElementById('about_item');
-  var skills_item = document.getElementById("skills_item");
-  var interests_item = document.getElementById("interests_item");
 
-
-  //var addlink = '#' + selected;
   var item_selected = String(selected);
-  //alert('You have clicked ' + selected);
   var education_data =''
   var education = 'education';
   var about_me = 'about';
@@ -22,10 +29,10 @@ function dataFunction(selected){
   var skills = 'skills';
 
   var element = "";
+  var mymenue =["about_item", "interests_item", "education_item", "skills_item"];
 
   var title = document.getElementById('title');
   // //window.history.pushState('', '', addlink);
-  // //document.getElementById('rightsection').innerHTML = 'Hello World';
 
   if(item_selected.trim() === about_me.trim()){
     title.innerHTML="Personal Statement";
@@ -47,5 +54,17 @@ function dataFunction(selected){
     title.innerHTML="My Hobbies";
     element = document.getElementById('interests_item');
   }
+  clearClass(mymenue, element);
+}
+
+// Remove highlight from all menu items.
+function clearClass(list, element){
+  for(i=0; i<list.length; i++){
+    var menueitem = String(list[i]);
+    var deleteClass = document.getElementById(menueitem);
+    deleteClass.classList.remove('active');
+  }
+
+  /* hightlight the menu item the user is viewing by adding the active class*/
   element.classList.add('active');
 }
