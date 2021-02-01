@@ -2,7 +2,7 @@
   straight to where they were, and not to the home page. */
 window.addEventListener('load', (event) => {
     var currentURL = window.location.href;
-    var part = currentURL.split("#")[1];
+    var part = currentURL.split("#")[1];  //This line returns whats after #
 
     if(part.trim().length > 0){
       dataFunction(part);
@@ -22,7 +22,8 @@ function dataFunction(selected){
 
 
   var item_selected = String(selected);
-  var education_data =''
+
+  // The following four variables are used in the if statements.
   var education = 'education';
   var about_me = 'about';
   var interests = 'interests';
@@ -54,7 +55,7 @@ function dataFunction(selected){
     title.innerHTML="My Hobbies";
     element = document.getElementById('interests_item');
   }
-  clearClass(mymenue, element);
+  clearClass(mymenue, element);   // I'm calling the clearClass function.
 }
 
 // Remove highlight from all menu items.
