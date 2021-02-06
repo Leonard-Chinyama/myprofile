@@ -213,7 +213,7 @@ div.mySlides > a:hover{
 
 /* Caption text */
 .text {
-  color: #ddd;
+  color: #eee;
   font-size: 20px;
   text-align: center;
   position: absolute;
@@ -330,4 +330,11 @@ div.mySlides > a:hover{
 
 .single-dataContainer ul li {
   line-height: 35px;
+}
+
+
+.blur {
+    /* Add the blur effect */
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
 }
