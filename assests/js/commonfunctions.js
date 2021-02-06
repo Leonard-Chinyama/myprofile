@@ -2,6 +2,11 @@
   straight to where they were, and not to the home page. */
 window.addEventListener('load', (event) => {
     var currentURL = window.location.href;
+
+    // Update the date in the footer
+    var d = new Date();
+    document.getElementById("footerdate").innerHTML = d.getFullYear();
+
     var part = currentURL.split("#")[1];  //This line returns whats after #
 
     if(part.trim().length > 0){
