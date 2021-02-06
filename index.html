@@ -16,13 +16,13 @@
 
 <body onload="indexslideshow()">
 
-    <div class="header">
+    <div id="navHeader" class="header">
       <a href="" class="fa fa-home logo"></a>
       <div class="header-right">
         <a href="#about" onclick="dataFunction('about')" id="about_item">About</a>
         <a href="#education" onclick="dataFunction('education')" id="education_item">Education</a>
         <a href="#skills" onclick="dataFunction('skills')" id="skills_item">Skills</a>
-        <a href="#interests" onclick="dataFunction('interests')" id="interests_item">Interests</a>
+        <a href="#interests" onclick="dataFunction('interests')" id="interests_item">Hobbies</a>
       </div>
     </div>
   <main>
@@ -48,10 +48,10 @@
                   </a>
                 </div>
                 <div class="container centered">
-                  <a href="#" class="fa fa-facebook"></a>
-                  <a href="#" class="fa fa-twitter"></a>
-                  <a href="#" class="fa fa-google-plus"></a>
-                  <a href="#" class="fa fa-linkedin"></a>
+                  <a href="https://web.facebook.com/leonardwritesofficial" class="fa fa-facebook" target="_blank"></a>
+                  <a href="https://twitter.com/chimz_leo" class="fa fa-twitter" target="_blank"></a>
+                  <a href="https://leonardwritesofficial.wordpress.com" class="fa fa-wordpress" aria-hidden="true"></a>
+                  <a href="https://www.linkedin.com/in/leonard-chinyama-508a3b89" class="fa fa-linkedin" target="_blank"></a>
                 </div>
               </div>
 
@@ -112,7 +112,7 @@
             <div class="mySlides fade" onclick="dataFunction('interests')">
               <a target="_self" href="#interests">
                 <div class="title">
-                  <h3>My Interests</h3>
+                  <h3>My Hobbies</h3>
                 </div>
                 <div class="slideshowhover">
                   <div class="numbertext">4 / 4</div>
@@ -143,12 +143,121 @@
           <button id="closeBtn" onclick="window.location.assign('index.html')" style="float:right;"></button>
         </div>
           <div class="title">
-          <h3 id="title">Hello World</h3>
-          <div class="dataset">
-            <p id="thedata">
+            <h3 id="title"></h3>
+          </div>
+
+          <!-- Styling the data for each slide and menu item.   -->
+
+          <!-- About Me data  -->
+          <div id="aboutData" class="dataset" style="display: none;">
+            <p class="thedata">
+              I am an academically and commercially astute Business Analyst, IT Specialist and software developer with a passion for ideation, design and the manufacture of
+              innovative and user-centered products that improve business processes, save time and make users' lives easier.
+              I have in-depth knowledge of business decision analysis, UX design, relational and non-relational databases, agile project management, and programming in a
+              variety of languages including PHP, Nodejs, Java, JavaScript, CSS, HTML and a fair understanding of Python and C. I am also a business process redesign and
+              improvement specialist with a proven ability in researching and developing products that are innovatively designed to meet the needs of both end users and the
+              environment. I also have expertise in Excel and Tableau and a robust understanding of di􀀱erent software development environments and frameworks both
+              frontend and backend.
+              I have recently completed my BSc degree in Business Information Systems and Mobile Systems (with distinction) which covered a wide range of associated
+              disciplines in business analysis, product design and development, project management, and IT professional practices.
             </p>
           </div>
+
+
+          <!-- Education data -->
+          <div id="educationData" class="dataset" style="display: none;">
+            <div class="single-dataContainer">
+              <hr style="margin-right: 30px;">
+              <h5 class="subtitle">Bachelor of Computer and Information Sciences (BCIS)</h5>
+              <h6 class="subtitle2">Monash University</h6>
+              <h6><strong>Majors: </strong> Business Information Systems (BIS), Mobile Systems (MS)</h6>
+              <p><strong>Year(s): </strong> 2018 - 2020</p>
+              <p><strong>Award(s): </strong> First Year School of IT Top Achiever Award (2nd place)</p>
+
+              <hr style="margin-right: 30px;">
+
+              <h5 class="subtitle">International Baccalaureate Diploma (IB)</h5>
+              <h6 class="subtitle2">Hermann Gmeiner International College, Tema</h6>
+              <h6><strong>Research: </strong> Extended Essay in Economics , Theory Of knowledge (TOK)</h6>
+              <p><strong>Year(s): </strong> 2015 - 2017</p>
+
+              <hr style="margin-right: 30px;">
+
+              <h5 class="subtitle">Internation General Certificate of Secondary Education (IGCSE)</h5>
+              <h6 class="subtitle2">Hermann Gmeiner International College, Tema</h6>
+              <p><strong>Year(s): </strong> 2013 - 2015</p>
+
           </div>
+          </div>
+
+
+          <!-- Skills data  -->
+          <div id="skillsData" class="dataset" style="display: none;">
+            <div class="single-dataContainer">
+              <hr style="margin-right: 30px;">
+              <h5 class="subtitle">Technical Skills</h5>
+              <ul>
+                <li>Full stack web development</li>
+                <li>Business Intelligence and data warehousing (Tableau)</li>
+                <li>Business decision modelling (Excel advanced)</li>
+                <li>Mobile Application development (Java)</li>
+                <li>Agile project management</li>
+                <li>Relational and non-relational database management</li>
+              </ul>
+
+              <hr style="margin-right: 30px;">
+
+              <h5 class="subtitle">Personal Skills</h5>
+              <ul>
+                <li>Good team management</li>
+                <li>Excellent verbal and written skills</li>
+                <li>Willingness to learn</li>
+                <li>Very disciplined</li>
+                <li>Agile project management</li>
+                <li>Relational and non-relational database management</li>
+              </ul>
+            </div>
+          </div>
+
+
+
+          <!--  Interests data  -->
+          <div id="interestsData" class="dataset" style="display:none;">
+            <div class="single-dataContainer">
+
+              <h6 class="subtitle2">Programming</h6>
+              <p>
+              Though I'm just a few years into my programming career, I don't shy away from learning a new language or way of accomplishing a task. You hava a challenge, hit me up, and I'd be very glad to play with code.
+              </p>
+
+              <hr style="margin-right: 30px;">
+
+              <h6 class="subtitle2">Reading and Learning</h6>
+              <p> I love to read. Anything from comics or novels to anything about technology.
+              I am always willing to learn something new every day whether events around the world, new vocabularly or trends in technology. I also welcome positive criticism, direction and correction which contributes to my well-being, awareness and intellectual growth.
+              </p>
+
+              <hr style="margin-right: 30px;">
+
+              <h6 class="subtitle2">Playing Board and Video Games</h6>
+              <p>
+              I love games; Chess, checkers, Fifa, PES, Mortal Kombat, Far cry, you name it. I will play anything interesting during my spare time.
+              </p>
+
+              <hr style="margin-right: 30px;">
+
+              <h6 class="subtitle2">Travelling</h6>
+              <p>
+              I am a hiking, camping and picnic enthusiast. I love interacting with the natural environment. I also love animals actually.
+              </p>
+
+              <hr style="margin-right: 30px;">
+
+           </div>
+          </div>
+
+
+          <!-- End of slide and menu data -->
           </div>
 
           </div>

@@ -18,6 +18,7 @@ window.addEventListener('load', (event) => {
 function dataFunction(selected){
 
   document.getElementById('slideshow').style.display = "none";
+  //document.getElementsByClassName('dataset').style.display = "none";
   document.getElementById('data-container').style.display = "block";
 
 
@@ -38,22 +39,27 @@ function dataFunction(selected){
   if(item_selected.trim() === about_me.trim()){
     title.innerHTML="Personal Statement";
     element = document.getElementById('about_item');
+    //document.getElementById("aboutMeData").style.display="block";
+    getElementsByClassName("aboutData");
 
   }
 
   else if (item_selected.trim() === education.trim()) {
     title.innerHTML="My Educational Background";
     element = document.getElementById('education_item');
+    getElementsByClassName("educationData");
   }
 
   else if(item_selected.trim() === skills.trim()){
     title.innerHTML="My Skills";
     element = document.getElementById('skills_item');
+    getElementsByClassName("skillsData");
   }
 
   else{
     title.innerHTML="My Hobbies";
     element = document.getElementById('interests_item');
+    getElementsByClassName("interestsData");
   }
   clearClass(mymenue, element);   // I'm calling the clearClass function.
 }
@@ -68,4 +74,17 @@ function clearClass(list, element){
 
   /* hightlight the menu item the user is viewing by adding the active class*/
   element.classList.add('active');
+}
+
+
+
+function getElementsByClassName(dataid){
+  var dataclass = document.getElementsByClassName('dataset');
+  var i;
+  for(i=0; i < dataclass.length; i++){
+    dataclass[i].style.display="none";
+    //alert("Removed the style from the class.");
+  }
+
+  document.getElementById(dataid).style.display = "block";
 }
