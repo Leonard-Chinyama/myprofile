@@ -1,2 +1,4 @@
 # myprofile
-This repository contains information about me as a developer. The site is developed using front-end tools
+This is my first personal website. Developed entirely using Javascript, css and html.
+
+/** Site still under construction **/
