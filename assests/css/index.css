@@ -42,7 +42,7 @@ body{
   float: right;
 }
 
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 500px) {
   .header a {
     float: none;
     display: block;
@@ -52,7 +52,7 @@ body{
   .header-right {
     float: none;
   }
-}
+} */
 
 
 footer {
